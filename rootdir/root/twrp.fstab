@@ -1,0 +1,8 @@
+/boot       emmc        /dev/bootimg		flags=display="boot";backup=1
+/system     ext4        /dev/block/platform/mtk-msdc.0/by-num/p5
+/data       ext4        /dev/block/platform/mtk-msdc.0/by-num/p7    length=-16521
+/cache      ext4        /dev/block/platform/mtk-msdc.0/by-num/p6
+/recovery   emmc        /dev/recovery
+/nvram	    emmc	/dev/nvram		flags=display="IMEI";backup=1
+/SDcard	    vfat        /dev/block/mmcblk1p1    /dev/block/mmcblk1	flags=display="Micro-sd";storage;wipeingui;removable
+/usb-otg    vfat        /dev/block/sda1		/dev/block/sda1		flags=display="OTG";storage;wipeingui;removable
